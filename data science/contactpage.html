@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Data Science Hub</title>
+  <link rel="stylesheet" href="contact.css" />
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+}
+
+header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.contact-section p {
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #374151;
+}
+
+#form-status {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Data Science Hub</h1>
+       <nav>
+      <a href="Homepage.html">Home</a>
+      <a href="Courses.html">courses</a>
+      <a href="aboutpage.html">about</a>
+      <a href="contactpage.html">Contact</a>
+    </nav>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions about our Data Science courses? Get in touch!</p>
+      
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Data Science Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

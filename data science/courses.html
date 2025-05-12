@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Courses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+    }
+
+    .container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  background-color: #0b3694;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 20px;
+    }
+
+    .course-card {
+      background: white;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card h2 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    .course-card p {
+      color: #555;
+    }
+
+    .btn {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    nav{
+         background-color: #1e3a8a;
+  color: rgb(245, 247, 246);
+  padding: 40px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ justify-content: space-evenly;
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>our courses</h1>
+      <nav>
+      <a href="Homepage.html">Home</a>
+      <a href="Courses.html">courses</a>
+      <a href="aboutpage.html">about</a>
+      <a href="contactpage.html">Contact</a>
+    </nav>
+    </div>
+  </header>
+
+  <section class="courses">
+    <div class="course-card">
+      <h2>Web Development</h2>
+      <p>Learn HTML, CSS, JavaScript, and modern frameworks to build beautiful websites.</p>
+      <a href="#" class="btn">Enroll Now</a>
+    </div>
+
+    <div class="course-card">
+      <h2>Python Full Stack</h2>
+      <p>Master frontend and backend with Python, Django, React, and databases
